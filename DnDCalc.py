@@ -3,7 +3,7 @@ import math
 st.title("DnD Damage Calculator")
 Hp = st.text_input("How many Hitpoints does the character have?")
 # Caculating Damage based on the following:
-Type = st.text_input("Resistance,Vulnerability,Immunity, or Straight? ")
+Type = st.text_input("Resistance, Vulnerability, Immunity, or Straight? ")
 if Type == "Straight":
     D = st.text_input("How much Damage?")
     TD = (D)
