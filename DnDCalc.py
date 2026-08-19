@@ -21,6 +21,8 @@ elif Type == "Vulnerability":
     TD = math.floor((D)*2)
 elif Type == "Immunity":
     st.write("No Damage!")
+else:
+    st.write("Please enter one of the following above.")
 if st.button("Calculate"):
     RemainingHp = (int(Hp) - int(TD))
     st.write(f"Remaining Hitpoints: {RemainingHp:,}")
