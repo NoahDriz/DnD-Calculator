@@ -41,7 +41,7 @@ st.title("DnD Damage Calculator")
 enemies = []
 EnemyAmount = st.number_input("How many enemies are there?", min_value=1, step=1, format="%d", key = "enemyamount")
 for i in range(EnemyAmount):
-    Hp = st.text_input(f"How many Hitpoints does character {i+1} have?", key = f"hp_{i}")
+    Hp = st.text_input(f"How many Hitpoints does enemy {i+1} have?", key = f"hp_{i}")
     #Caculating Damage based on the following:
     Type = st.text_input("Resistance, Vulnerability, Immunity, or Straight? ", key = f"type_{i}")
     match Type:
