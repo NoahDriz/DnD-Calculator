@@ -22,7 +22,21 @@ def set_background(image_file):
     )
 
 set_background("Assets/DnDCalcBackground.png")
-
+st.markdown(
+    """
+    <style>
+    .stApp, .stApp label, .stApp p, .stApp h1, .stApp h2, .stApp h3 {
+        color: white;
+        text-shadow:
+            -1px -1px 0 #000,
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.title("DnD Damage Calculator")
 enemies = []
 EnemyAmount = st.number_input("How many enemies are there?", min_value=1, step=1, format="%d", key = "enemyamount")
